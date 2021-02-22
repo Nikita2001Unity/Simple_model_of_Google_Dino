@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#game{
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-left: none;
+}
+
+#character{
+    width: 75px;
+    height: 80px;
+    background-image: url(img/pngwing.com.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 123px;
+}
+.animate{
+    animation: jump 0.5s;
+}
+@keyframes jump{
+    0%{
+        top: 123px;
+    }
+    50%{
+        top: 50px;
+    }
+    75%{
+        top: 50px;
+    }
+    100%{
+        top: 123px;
+    }
+}
+
+#block{
+    width: 60px;
+    height: 90px;
+    background-image: url(img/cacti---cacti2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px;
+    position: relative;
+    top: 49px;
+    left: 440px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{
+        left: 480px;
+    }
+    100%{
+       left:-40px;
+    }
+}
+
+#score{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-family: sans-serif;
+}
